@@ -1,4 +1,4 @@
-# 🔍 Proactive Threat Hunting & Incident Write-ups
+# Proactive Threat Hunting & Incident Write-ups
 
 Welcome to my threat hunting repository. This project serves as a technical logbook documenting my hands-on experience analyzing endpoint telemetry, constructing advanced detection queries, and reconstructing end-to-end cyber attacks. 
 
@@ -6,15 +6,15 @@ Instead of relying purely on static security alerts, the investigations hosted h
 
 ---
 
-## 🧭 Operational Catalog
+## Operational Catalog
 
 | Investigation Name | Target Environment | Core Focus & Core Tradecraft | Advanced Hunting Documentation |
 | :--- | :--- | :--- | :---: |
-| **Just Another Day: Dissecting RDP Compromise** | Corporate Subnet Grid | • Credential Abuse / Identity Hijacking<br>• Living off the Land (LotL)<br>• Active Data Camouflage | [View Full Report 📄](./Just%20Another%20Day%3A%20Dissecting%20RDP%20Compromise.md/) |
+| **Just Another Day: Dissecting RDP Compromise** | Corporate Subnet Grid | • Credential Abuse / Identity Hijacking<br>• Living off the Land (LotL)<br>• Active Data Camouflage | [View Full Report](./Just%20Another%20Day%3A%20Dissecting%20RDP%20Compromise.md/) |
 
 ---
 
-## 🧬 Core Hunting Methodology
+## Core Hunting Methodology
 
 Every report in this repository follows a structured, incident-response-aligned framework to ensure findings are actionable for defensive teams:
 
@@ -25,7 +25,7 @@ Every report in this repository follows a structured, incident-response-aligned 
 
 ---
 
-## 🛠️ Technical Toolkit
+## Technical Toolkit
 
 - **SIEM / Analytics Platforms:** Microsoft Sentinel, Azure Data Explorer
 - **Query Languages:** Kusto Query Language (KQL)
