@@ -10,7 +10,7 @@ Instead of relying purely on static security alerts, the investigations hosted h
 
 | Investigation Name | Target Environment | Core Focus & Core Tradecraft | Advanced Hunting Documentation |
 | :--- | :--- | :--- | :---: |
-| **Just Another Day: Dissecting RDP Compromise** | Corporate Subnet Grid | • Credential Abuse / Identity Hijacking<br>• Living off the Land (LotL)<br>• Active Data Camouflage | [View Full Report 📄](./Just-Another-Day-RDP-Compromise/) |
+| **Just Another Day: Dissecting RDP Compromise** | Corporate Subnet Grid | • Credential Abuse / Identity Hijacking<br>• Living off the Land (LotL)<br>• Active Data Camouflage | [View Full Report 📄](./Just%20Another%20Day%3A%20Dissecting%20RDP%20Compromise.md/) |
 
 ---
 
