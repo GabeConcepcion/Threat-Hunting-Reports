@@ -1,6 +1,5 @@
+=<img width="3168" height="1344" alt="Just Another Day" src="https://github.com/user-attachments/assets/d124e7fb-958d-4eb2-8d18-ab20786122e3" />
 # 🛡️ Threat Hunt Report – Just Another Day: Dissecting RDP Compromise
-
----
 
 ## 📌 Executive Summary
 
@@ -31,7 +30,7 @@ During a proactive compromise assessment of the corporate network infrastructure
 - [🧬 MITRE ATT&CK Summary](#-mitre-attck-summary)  
 - [🔍 Chronological Stage Analysis](#-chronological-stage-analysis)  
   - [🔒 Stage 01: The Billing Account Compromise](#-stage-01-the-billing-account-compromise)  
-  - [⌨️ Stage 02: Hands on the Keyboard Reconnaissance](#-stage-02-hands-on-the-keyboard-reconnaissance)  
+  - [💻 Stage 02: Hands on the Keyboard Reconnaissance](#-stage-02-hands-on-the-keyboard-reconnaissance)  
   - [📁 Stage 03: Operational Boundary Violations](#-stage-03-operational-boundary-violations)  
   - [🌐 Stage 04: Lateral Movement & Infrastructure Filtering](#-stage-04-lateral-movement--infrastructure-filtering)  
   - [📦 Stage 05: High-Value Target Data Collection](#-stage-05-high-value-target-data-collection)  
@@ -108,9 +107,12 @@ Enforce geolocation-based conditional access rules within your identity provider
 
 </details>
 
-### **⌨️ Stage 02: Hands on the Keyboard Reconnaissance**
+### 💻 Stage 02: Hands on the Keyboard Reconnaissance
 
 Filters through background operating system events to uncover the attacker's manual command history, exposing their targeted reconnaissance timeline and their ultimate network infrastructure focus.
+
+<details>
+<summary>🔍 <strong>View Technical Breakdown</strong></summary>
 
 #### **🎯 Hunting Objective**
 
@@ -158,9 +160,14 @@ DeviceProcessEvents
 
 Monitor or restrict standard business accounts from running built-in network profiling tools like arp.exe, nslookup.exe, and net.exe. Create behavioral tracking exceptions that flag users who unexpectedly execute multiple discovery utilities within a short timeframe.
 
-### **📁 Stage 03: Operational Boundary Violations**
+</details>
+
+### 📁 Stage 03: Operational Boundary Violations
 
 Exposes how the compromised account moved past its assigned access limits, showing the exact business records it modified and the hidden staging methods used to conceal the data theft.
+
+<details>
+<summary>🔍 <strong>View Technical Breakdown</strong></summary>
 
 #### **🎯 Hunting Objective**
 
@@ -198,9 +205,14 @@ DeviceFileEvents
 
 Deploy Automated File Integrity Monitoring (FIM) and strict access control lists (ACLs) on sensitive shares. Generate high-priority alerts whenever user profiles from one department attempt to browse or modify directories belonging to another team (such as a billing user opening HR payroll repositories).
 
-### **🌐 Stage 04: Lateral Movement & Infrastructure Filtering**
+</details>
+
+### 🌐 Stage 04: Lateral Movement & Infrastructure Filtering
 
 Tracks the attacker's lateral movement path across adjacent systems, detailing how to forensically filter out automated operating system background activity to identify real host compromises.
+
+<details>
+<summary>🔍 <strong>View Technical Breakdown</strong></summary>
 
 #### **🎯 Hunting Objective**
 
@@ -233,9 +245,14 @@ DeviceProcessEvents
 
 Enforce the Principle of Least Privilege by disabling cross-workstation RDP paths. Standard operational workstations should never be permitted to establish direct RDP sessions to adjacent user machines unless they are originating from a designated, highly monitored administrative jump box environment.
 
-### **📦 Stage 05: High-Value Target Data Collection**
+</details>
+
+### 📦 Stage 05: High-Value Target Data Collection
 
 Audits the attacker's final actions once they successfully breached the primary storage server, focusing on how they mapped authorization limits and identified targeted employee records.
+
+<details>
+<summary>🔍 <strong>View Technical Breakdown</strong></summary>
 
 #### **🎯 Hunting Objective**
 
@@ -271,9 +288,14 @@ DeviceProcessEvents
 
 Set up data loss prevention (DLP) alerts to monitor file share access patterns. Implement immediate alerts for scenarios where a single user account rapidly views or downloads multiple high-value, sensitive files (such as files containing string matches for payroll, compensation, or ssn) across different network directories.
 
-### **🧾 Stage 06: Threat Assessment & Incident Judgement**
+</details>
+
+### 🧾 Stage 06: Threat Assessment & Incident Judgement
 
 Provides a comprehensive summary of the incident, outlining the full scope of the stolen data and delivering an evidence-backed assessment of the root cause.
+
+<details>
+<summary>🔍 <strong>View Technical Breakdown</strong></summary>
 
 #### **🎯 Hunting Objective**
 
@@ -310,6 +332,8 @@ DeviceLogonEvents
 #### **🛠️ Defensive Engineering Tip**
 
 Transition the enterprise architecture toward a strict Zero Trust framework. Mandate phishing-resistant Multi-Factor Authentication (MFA) across all remote access entry points, eliminate legacy cross-department access permissions, and utilize User and Entity Behavior Analytics (UEBA) to automatically flag abnormal data access patterns.
+
+</details>
 
 ## **🚨 Detection Gaps & Recommendations**
 
