@@ -10,8 +10,8 @@ Instead of relying purely on static security alerts, the investigations hosted h
 
 | Investigation Name | Target Environment | Core Focus & Core Tradecraft | Advanced Hunting Documentation |
 | :--- | :--- | :--- | :---: |
-| **Just Another Day: Dissecting RDP Compromise** | Corporate Subnet Grid | • Credential Abuse / Identity Hijacking<br>• Living off the Land (LotL)<br>• Active Data Camouflage | [View Full Report](./Dissecting-RDP-Compromise.md) |
-| **Finance User Breach: Identity Hijacking** | Finance Department Subnet | • Session Hijacking / Token Theft<br>• Business Email Compromise (BEC)<br>• Financial Data Exfiltration | [View Full Report](./Finance-User-Breach.md) |
+| **Dissecting RDP Compromise** | Corporate Subnet Grid | • Credential Abuse / Identity Hijacking<br>• Living off the Land (LotL)<br>• Active Data Camouflage | [View Full Report](./Dissecting-RDP-Compromise.md) |
+| **Finance User Breach** | Finance Department Subnet | • Multi-Stage Identity Breach<br>• External Credential Abuse<br>• Host Persistence Mechanisms<br>• Server Lateral Movement | [View Full Report](./Finance-User-Breach.md) |
 ---
 
 ## Core Hunting Methodology
