@@ -72,7 +72,7 @@ The threat actor engaged in identity hijacking, exploiting the valid domain prof
 Focuses on identifying the compromised identity, analyzing how the unauthorized session was created, and highlighting the geographic anomalies that differentiate this activity from normal internal employee operations.
 
 <details>  
-<summary>🚩 <strong>Technical Breakdown (Flags 1 - 3)</strong></summary>
+<summary>🚩 Technical Breakdown (Flags 1 - 3)</summary>
 
 #### Hunting Objective  
 Isolate the specific user environment undergoing anomalous behavior, identify the authentication mechanism utilized by the unauthorized actor, and trace the connection back to its true network source.
@@ -112,7 +112,7 @@ Enforce geolocation-based conditional access rules within your identity provider
 Filters through background operating system events to uncover the attacker's manual command history, exposing their targeted reconnaissance timeline and their ultimate network infrastructure focus.
 
 <details>
-<summary>🚩 <strong>Technical Breakdown (Flags 4 - 8)</strong></summary>
+<summary>🚩 Technical Breakdown (Flags 4 - 8)</summary>
 
 #### **Hunting Objective**
 
@@ -167,7 +167,7 @@ Monitor or restrict standard business accounts from running built-in network pro
 Exposes how the compromised account moved past its assigned access limits, showing the exact business records it modified and the hidden staging methods used to conceal the data theft.
 
 <details>
-<summary>🚩 <strong>Technical Breakdown (Flags 9 - 13)</strong></summary>
+<summary>🚩 Technical Breakdown (Flags 9 - 13)</summary>
 
 #### **Hunting Objective**
 
@@ -212,7 +212,7 @@ Deploy Automated File Integrity Monitoring (FIM) and strict access control lists
 Tracks the attacker's lateral movement path across adjacent systems, detailing how to forensically filter out automated operating system background activity to identify real host compromises.
 
 <details>
-<summary>🚩 <strong>Technical Breakdown (Flags 14 - 15)</strong></summary>
+<summary>🚩 Technical Breakdown (Flags 14 - 15)</summary>
 
 #### **Hunting Objective**
 
@@ -252,7 +252,7 @@ Enforce the Principle of Least Privilege by disabling cross-workstation RDP path
 Audits the attacker's final actions once they successfully breached the primary storage server, focusing on how they mapped authorization limits and identified targeted employee records.
 
 <details>
-<summary>🚩 <strong>Technical Breakdown (Flags 16 - 18)</strong></summary>
+<summary>🚩 Technical Breakdown (Flags 16 - 18)</summary>
 
 #### **Hunting Objective**
 
@@ -295,7 +295,7 @@ Set up data loss prevention (DLP) alerts to monitor file share access patterns. 
 Provides a comprehensive summary of the incident, outlining the full scope of the stolen data and delivering an evidence-backed assessment of the root cause.
 
 <details>
-<summary>🚩 <strong>Technical Breakdown (Flags 19 - 20)</strong></summary>
+<summary>🚩 Technical Breakdown (Flags 19 - 20)</summary>
 
 #### **Hunting Objective**
 
